@@ -8,9 +8,17 @@ class Player
     @grid = StartGrid.new.new_grid
   end
 
+  def player1(x)
+
+  end
+
   def current_status
-    return @grid
-    puts @grid 
+  @grid.each do |x|
+        x.each do |y|
+          print y
+        end
+        puts "\n"
+      end
   end
 
 end

@@ -12,4 +12,10 @@ describe Player do
     expect(player.current_status).not_to be nil
   end
 
+  describe "player1 plays a turn" do
+    it "player one can enter a value" do
+      expect(player).to respond_to(:player1).with(1).argument
+    end
+  end
+
 end
