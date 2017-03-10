@@ -19,16 +19,13 @@ describe Player do
 
     it "player one can enter a value" do
       player.player1(1)
+
       expect(player.grid[0][0]).to eq('x')
     end
 
   end
 
   describe "player2 plays a turn" do
-    it "player one can enter a value" do
-      expect(player).to respond_to(:player2).with(1).argument
-    end
-
     it "player one can enter a value" do
       player.player1(1)
       player.player2(3)
