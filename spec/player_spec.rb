@@ -57,6 +57,17 @@ describe Player do
   end
 
   describe "a winning game" do
+    it "checks player 1 wins " do
+      player.player1(4)
+      player.player2(1)
+      player.player1(5)
+      player.player2(7)
+      player.player1(6)
+      expect(player.winner).to eq("winner")
+    end
+  end
+
+  describe "a winning game" do
     it "checks player 2 wins " do
       player.player1(4)
       player.player2(1)
